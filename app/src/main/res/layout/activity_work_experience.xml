@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Work_Experience">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22.5dp"
+        android:layout_marginTop="13dp"
+        android:background="@null"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Work experience"
+        android:textSize="22sp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job Title "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/work" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Enter your Name"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:paddingStart="16dp"
+        android:textColor="#716F6F"
+        android:paddingEnd="10dp"
+        android:background="@drawable/shape"
+        app:layout_constraintTop_toBottomOf="@+id/job"/>
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Company Name "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/cpName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:paddingStart="16dp"
+        android:textColor="#716F6F"
+        android:paddingEnd="10dp"
+        android:background="@drawable/shape"
+        app:layout_constraintTop_toBottomOf="@+id/companyName"/>
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Start Date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpName" />
+
+    <EditText
+        android:id="@+id/etStartDate"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:paddingStart="16dp"
+        android:textColor="#716F6F"
+        android:paddingEnd="10dp"
+        android:drawableEnd="@drawable/calendar_today"
+        android:background="@drawable/shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate"/>
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="End Date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toEndOf="@+id/startDate"
+        app:layout_constraintTop_toBottomOf="@+id/cpName" />
+
+    <EditText
+        android:id="@+id/etEndDate"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape"
+        android:drawableEnd="@drawable/calendar_today"
+        android:paddingStart="16dp"
+        android:paddingEnd="10dp"
+        android:textColor="#716F6F"
+        app:layout_constraintStart_toEndOf="@+id/etStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/endDate" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add resume"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="27dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEndDate"/>
+
+    <EditText
+        android:id="@+id/etResume"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/shape"
+        android:paddingStart="16dp"
+        android:paddingEnd="10dp"
+        android:textColor="#716F6F"
+        android:drawableEnd="@drawable/attachment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resume" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shapebutton"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etResume" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shapebutton2"
+        android:text="Previous"
+        android:textColor="#FF2568"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
